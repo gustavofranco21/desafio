@@ -1,0 +1,37 @@
+.styled-button {
+  background: #4299E1;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.styled-button:hover {
+  background: #3182CE;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.2);
+}
+
+.styled-button:active {
+  transform: translateY(0);
+}
+
+/* Para o botão fullWidth */
+.styled-button.fullWidth {
+  width: 100%;
+}
+.styled-button.danger {
+  background-color: #E53E3E;
+}
+
+.styled-button.danger:hover {
+  background-color: #C53030;
+}
