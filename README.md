@@ -20,12 +20,12 @@ Desenvolvi esta aplicação como teste técnico para demonstrar minhas habilidad
 - Animações suaves durante as ações
 
 ## 🛠️ Tecnologias Utilizadas
-| Ferramenta | Finalidade |
-|------------|------------|
+| Ferramenta |
+|------------|
 | ![React](https://img.shields.io/badge/React-18-61DAFB) |
 | ![Vite](https://img.shields.io/badge/Vite-4-646CFF) | 
 | ![Axios](https://img.shields.io/badge/Axios-1.3-5A29E4) | 
-| CSS Modules | Estilização |
+| CSS Modules | 
 
 ## 🚀 Como Executar
 
