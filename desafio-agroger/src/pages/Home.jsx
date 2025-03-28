@@ -12,7 +12,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sessionToDelete, setSessionToDelete] = useState(null);
 
-  // Carrega as sessões iniciais
+ 
   useEffect(() => {
     const loadSessions = async () => {
       try {
@@ -29,13 +29,13 @@ const Home = () => {
     loadSessions();
   }, []);
 
-  // Filtra as sessões baseado no termo de busca
+  
   const filteredSessions = sessions.filter(session =>
     session.cooperative.toLowerCase().includes(searchTerm.toLowerCase()) ||
     session.location.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Cria nova sessão
+  
   const handleNewSession = async () => {
     try {
       setLoading(true);
@@ -49,16 +49,16 @@ const Home = () => {
     }
   };
 
-  // Deleta uma sessão
+  
   const handleDeleteSession = (sessionId) => {
     setSessionToDelete(sessionId);
   };
 
-  // Confirma a exclusão
+  
   const confirmDelete = async () => {
     try {
       setLoading(true);
-      await new Promise(resolve => setTimeout(resolve, 500)); // Simula chamada API
+      await new Promise(resolve => setTimeout(resolve, 500)); 
       setSessions(sessions.filter(session => session.id !== sessionToDelete));
       setSessionToDelete(null);
     } catch (err) {
@@ -121,7 +121,7 @@ const Home = () => {
         </Button>
       </div>
 
-      {/* Modal de confirmação */}
+      
       {sessionToDelete && (
         <div className="modal-overlay">
           <div className="confirmation-modal">

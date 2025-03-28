@@ -12,7 +12,7 @@ export const fetchSessions = async () => {
   try {
     const response = await api.get('/posts?_limit=3');
     return response.data.map((post, index) => ({
-      id: post.id + '-' + index, // Adiciona índice para garantir unicidade
+      id: post.id + '-' + index, 
       cooperative: `Cooperativa ${post.title.split(' ')[0]}`,
       date: new Date(Date.now() - index * 86400000).toLocaleDateString('pt-BR'),
       time: `${10 + index}:00`,
@@ -27,13 +27,13 @@ export const fetchSessions = async () => {
 export const createNewSession = async () => {
   try {
     const response = await api.post('/posts', {
-      title: `Sessão ${generateUniqueId()}`, // Título único
+      title: `Sessão ${generateUniqueId()}`,
       body: 'Detalhes da nova sessão',
       userId: 1,
     });
     
     return {
-      id: generateUniqueId(), // ID único mesmo quando a API retornar 101
+      id: generateUniqueId(), 
       cooperative: 'Nova Cooperativa',
       date: new Date().toLocaleDateString('pt-BR'),
       time: new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
