@@ -168,3 +168,26 @@
   gap: 12px;
   justify-content: flex-end;
 }
+.app-content {
+  padding: 20px;
+  margin-top: 20px;
+}.coffee-app-container {
+  background-color: #f1f8e9; /* Verde muito claro de fundo */
+}
+
+.section-header h2 {
+  color: #2e7d32; /* Verde para títulos */
+}
+
+.badge {
+  background-color: #c8e6c9; /* Verde claro para o badge */
+  color: #1b5e20; /* Verde escuro para o texto */
+}
+.confirmation-modal {
+  /* ... outros estilos ... */
+  border-top: 4px solid #388e3c;
+}
+
+.modal-actions .styled-button:first-child {
+  background-color: #81c784; /* Verde para o botão cancelar */
+}

@@ -38,3 +38,11 @@
   outline: none;
   box-shadow: 0 0 0 2px rgba(229, 62, 62, 0.2);
 }
+.session-card {
+  /* ... outros estilos ... */
+  border-left: 4px solid #81c784; /* Borda lateral verde */
+}
+
+.session-id {
+  color: #2e7d32; /* Verde para o ID */
+}
